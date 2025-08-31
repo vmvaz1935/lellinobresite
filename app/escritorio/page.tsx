@@ -32,9 +32,9 @@ export default function EscritorioPage() {
           loading="lazy"
           decoding="async"
         />
-        <div className="flex flex-col justify-center space-y-4">
+        <div className="flex flex-col justify-center items-center space-y-4 text-center">
           <h2 className="text-2xl font-medium text-brand-primary-700">Nossos valores</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
             <article className="rounded-xl border border-brand-primary-100 p-5 bg-bg-default shadow-card">
               <div className="flex items-center gap-3 mb-2">
                 <svg className="text-brand-secondary-500" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" role="img" aria-label="Atendimento humanizado">
