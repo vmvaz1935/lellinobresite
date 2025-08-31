@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 
 export default function Header() {
   return (
-    <header className="fixed top-0 inset-x-0 z-50 text-text-on-primary bg-bg-inverse/80 supports-[backdrop-filter]:bg-bg-inverse/70 backdrop-blur-sm border-b border-white/10">
+    <header className="fixed top-0 inset-x-0 z-50 text-text-on-primary bg-brand-primary-900 shadow-sm border-b border-brand-primary-900" style={{ backgroundColor: 'var(--bg-inverse)' }}>
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
         <Link href="/" className="flex items-center" aria-label="Ir para a página inicial">
           <Image
