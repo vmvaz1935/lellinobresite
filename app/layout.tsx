@@ -27,6 +27,11 @@ export const metadata: Metadata = {
       },
     ],
   },
+  icons: {
+    icon: '/images/brand/logo-lelli-nobre.png',
+    shortcut: '/images/brand/logo-lelli-nobre.png',
+    apple: '/images/brand/logo-lelli-nobre.png',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
