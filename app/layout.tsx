@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SkipToContent from '../components/SkipToContent';
+import WhatsAppFloat from '../components/WhatsAppFloat';
 import { legalServiceLd, organizationLd, personChristineLd, personMateusLd } from '../lib/schema';
 
 export const metadata: Metadata = {
@@ -58,6 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
         <Footer />
+        <WhatsAppFloat />
       </body>
     </html>
   );
