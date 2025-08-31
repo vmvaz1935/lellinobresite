@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { getOfficeImagePath } from '../../lib/images';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default function EscritorioPage() {
       </p>
       <div className="grid md:grid-cols-2 gap-8">
         <Image
-          src="/images/office/escritorio-higienopolis-01.webp"
+          src={getOfficeImagePath()}
           alt="Escritório Lelli Nobre Advogados em Higienópolis, São Paulo"
           width={800}
           height={1200}
