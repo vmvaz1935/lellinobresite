@@ -1,0 +1,5 @@
+@import './lelli_nobre_tokens.css';
+:root {
+  /* alias for backgrounds */
+  --color-surface: var(--bg-default);
+}
