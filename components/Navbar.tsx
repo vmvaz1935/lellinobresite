@@ -26,7 +26,7 @@ export default function Navbar() {
               href={link.href}
               className={
                 pathname === link.href
-                  ? 'text-brand-accent-300 underline'
+                  ? 'text-brand-accent-300 underline underline-offset-4'
                   : 'hover:text-brand-accent-300 focus:text-brand-accent-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent-300 focus-visible:ring-offset-2 rounded'
               }
               aria-current={pathname === link.href ? 'page' : undefined}
