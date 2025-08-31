@@ -49,7 +49,7 @@ function IconForArea({ title }: { title: string }) {
 
 export default function AreaCard({ title, bullets }: AreaCardProps) {
   return (
-    <article className="rounded-xl border border-brand-primary-100 p-6 bg-bg-default text-text-primary shadow-card focus-within:ring-2 ring-brand-accent-500">
+    <article className="rounded-xl border border-brand-primary-100 p-6 bg-bg-default text-text-primary shadow-card ring-0 focus-within:ring-2 ring-brand-accent-500 transition-transform duration-200 ease-out hover:shadow-md hover:-translate-y-0.5 hover:scale-[1.01]">
       <div className="flex items-center gap-3 mb-3">
         <IconForArea title={title} />
         <h3 className="text-xl font-medium text-brand-primary-700">{title}</h3>
