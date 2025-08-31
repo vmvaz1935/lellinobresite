@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .text-text-on-accent {
+    color: var(--text-on-accent);
+  }
+}
+
 /* Skip to content link */
 .skip-to-content {
   position: absolute;

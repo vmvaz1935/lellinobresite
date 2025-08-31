@@ -54,6 +54,7 @@ const config: Config = {
           secondary: 'var(--text-secondary)',
           onPrimary: 'var(--text-on-primary)',
           onAccent: 'var(--text-on-accent)',
+          'on-accent': 'var(--text-on-accent)',
           onSecondary: 'var(--text-on-secondary)',
         },
         bg: {
