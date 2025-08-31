@@ -18,7 +18,7 @@ const links: NavLink[] = [
 export default function Navbar() {
   const pathname = usePathname();
   return (
-    <nav aria-label="Navegação principal">
+    <nav aria-label="Navegação principal" className="text-text-on-primary">
       <ul className="flex space-x-6">
         {links.map((link) => (
           <li key={link.href}>
@@ -26,8 +26,8 @@ export default function Navbar() {
               href={link.href}
               className={
                 pathname === link.href
-                  ? 'text-brand-accent-500 underline'
-                  : 'hover:text-brand-accent-500 focus:text-brand-accent-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent-500 focus-visible:ring-offset-2 rounded'
+                  ? 'text-brand-accent-300 underline'
+                  : 'hover:text-brand-accent-300 focus:text-brand-accent-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent-300 focus-visible:ring-offset-2 rounded'
               }
               aria-current={pathname === link.href ? 'page' : undefined}
             >

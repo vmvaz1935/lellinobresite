@@ -25,7 +25,7 @@ export default function Hero({ title, subtitle }: HeroProps) {
           <Link href="/contato" className="btn btn-primary">Fale Conosco</Link>
           <a
             href="https://wa.me/5511910555566"
-            className="btn btn-secondary"
+            className="btn btn-secondary-on-dark"
             target="_blank"
             rel="noopener noreferrer"
           >
