@@ -7,7 +7,7 @@ const config: Config = {
     './lib/**/*.{ts,tsx}',
     './styles/**/*.{css,ts}'
   ],
-  darkMode: 'media',
+  darkMode: false,
   theme: {
     extend: {
       colors: {
@@ -54,7 +54,6 @@ const config: Config = {
           secondary: 'var(--text-secondary)',
           onPrimary: 'var(--text-on-primary)',
           onAccent: 'var(--text-on-accent)',
-          'on-accent': 'var(--text-on-accent)',
           onSecondary: 'var(--text-on-secondary)',
         },
         bg: {

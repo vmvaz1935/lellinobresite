@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://[PENDENTE-DOMINIO]/sitemap.xml
+# Atualizado para usar a URL de ambiente em produção (next-sitemap também gera este arquivo)
+Sitemap: https://www.lellinobre.com.br/sitemap.xml

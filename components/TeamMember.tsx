@@ -18,7 +18,10 @@ export default function TeamMember({ name, role, bio, image, linkedin }: TeamMem
           alt={`Foto de ${name}, sócio(a) do Lelli Nobre Advogados`}
           width={500}
           height={600}
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
           className="rounded-lg object-cover"
+          loading="lazy"
+          decoding="async"
         />
       </div>
       <div className="md:col-span-4 space-y-2">

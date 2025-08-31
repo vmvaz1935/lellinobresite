@@ -15,6 +15,7 @@ export default function Hero({ title, subtitle }: HeroProps) {
         fill
         className="object-cover"
         priority
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/30" aria-hidden="true" />
       <div className="relative z-10 max-w-3xl px-4">

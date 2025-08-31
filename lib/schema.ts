@@ -29,10 +29,14 @@ export function organizationLd() {
     '@type': 'Organization',
     name: 'Lelli Nobre Advogados',
     url: getSiteUrl(),
-    logo: `${getSiteUrl()}/images/brand/logo-lelli-nobre.png`,
+    logo: `${getSiteUrl()}/images/brand/logo-lelli-nobre.webp`,
+    // Links para perfis externos relacionados à organização (WhatsApp e LinkedIn dos sócios)
     sameAs: [
       'https://wa.me/5511910555566',
-      '[PENDENTE]',
+      // LinkedIn do sócio Mateus Lelli
+      'https://br.linkedin.com/in/mateus-nobre-granjo-lelli-bb582ba4',
+      // LinkedIn da sócia Christine Nobre
+      'https://br.linkedin.com/in/christine-nobre-38ba9b1a6',
     ],
   };
 }
@@ -49,7 +53,8 @@ export function personChristineLd() {
       name: 'Lelli Nobre Advogados',
       url: getSiteUrl(),
     },
-    sameAs: ['[PENDENTE]'],
+    // Perfil profissional de Christine no LinkedIn
+    sameAs: ['https://br.linkedin.com/in/christine-nobre-38ba9b1a6'],
   };
 }
 
@@ -65,6 +70,7 @@ export function personMateusLd() {
       name: 'Lelli Nobre Advogados',
       url: getSiteUrl(),
     },
-    sameAs: ['[PENDENTE]'],
+    // Perfil profissional de Mateus no LinkedIn
+    sameAs: ['https://br.linkedin.com/in/mateus-nobre-granjo-lelli-bb582ba4'],
   };
 }

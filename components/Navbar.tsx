@@ -1,3 +1,4 @@
+"use client";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -26,7 +27,7 @@ export default function Navbar() {
               className={
                 pathname === link.href
                   ? 'text-brand-accent-500 underline'
-                  : 'hover:text-brand-accent-500 focus:text-brand-accent-500 focus:outline-none'
+                  : 'hover:text-brand-accent-500 focus:text-brand-accent-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent-500 focus-visible:ring-offset-2 rounded'
               }
               aria-current={pathname === link.href ? 'page' : undefined}
             >

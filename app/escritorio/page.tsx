@@ -26,7 +26,10 @@ export default function EscritorioPage() {
           alt="Escritório Lelli Nobre Advogados em Higienópolis, São Paulo"
           width={800}
           height={1200}
+          sizes="(max-width: 768px) 100vw, 50vw"
           className="rounded-lg object-cover"
+          loading="lazy"
+          decoding="async"
         />
         <div className="flex flex-col justify-center space-y-4">
           <h2 className="text-2xl font-medium text-brand-primary-700">Nossos valores</h2>

@@ -11,6 +11,10 @@ const nextConfig = {
     // If you need to allow external images, define remotePatterns here
     remotePatterns: [],
   },
+  experimental: {
+    // Enable the App Router directory. Vercel currently requires this flag in JS configuration
+    appDir: true,
+  },
 };
 
 module.exports = nextConfig;

@@ -28,6 +28,7 @@ export default function QuemSomosPage() {
           name="Christine Nobre"
           role="Sócia"
           image="/images/team/christine-nobre.webp"
+          linkedin="https://br.linkedin.com/in/christine-nobre-38ba9b1a6"
           bio={
             `Advogada com sólida formação acadêmica e ampla experiência na assessoria jurídica de empresas. ` +
             `Graduada em Direito pela Universidade de São Paulo (USP), possui especialização em Direito Empresarial ` +
@@ -46,6 +47,7 @@ export default function QuemSomosPage() {
           name="Mateus Lelli"
           role="Sócio"
           image="/images/team/mateus-lelli.webp"
+          linkedin="https://br.linkedin.com/in/mateus-nobre-granjo-lelli-bb582ba4"
           bio={
             `Advogado com sólida formação acadêmica e ampla experiência na assessoria jurídica de empresas. ` +
             `Graduado em Direito pela Universidade Presbiteriana Mackenzie, tem sua atuação voltada ao atendimento ` +

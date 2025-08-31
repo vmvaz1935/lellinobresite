@@ -8,10 +8,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
         <Link href="/" className="flex items-center" aria-label="Ir para a página inicial">
           <Image
-            src="/images/brand/logo-lelli-nobre.png"
+            src="/images/brand/logo-lelli-nobre.webp"
             alt="Logo Lelli Nobre Advogados"
             width={48}
             height={48}
+            sizes="48px"
             priority
           />
           <span className="sr-only">Lelli Nobre Advogados</span>
