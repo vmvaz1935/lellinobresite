@@ -60,3 +60,20 @@ textarea {
 label {
   @apply block font-medium text-text-primary mb-1;
 }
+
+/* Base typography scale and vertical rhythm */
+@layer base {
+  h1 { @apply text-3xl md:text-5xl leading-tight tracking-tight; }
+  h2 { @apply text-2xl md:text-3xl leading-snug; }
+  h3 { @apply text-xl md:text-2xl leading-snug; }
+  p  { @apply leading-relaxed; }
+}
+
+/* Respect prefers-reduced-motion: minimize global transitions/animations */
+@media (prefers-reduced-motion: reduce) {
+  *:not([data-allow-motion]) {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
