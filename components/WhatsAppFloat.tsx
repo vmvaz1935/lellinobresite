@@ -2,7 +2,7 @@ export default function WhatsAppFloat() {
   return (
     <a
       href="https://wa.me/5511910555566"
-      className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-brand-accent-500 text-text-on-accent shadow-card hover:bg-brand-accent-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent-300"
+      className="hidden md:inline-flex fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-brand-accent-500 text-text-on-accent shadow-card hover:bg-brand-accent-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent-300"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Conversar no WhatsApp"
