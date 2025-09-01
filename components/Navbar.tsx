@@ -42,8 +42,8 @@ export default function Navbar() {
               href={link.href}
               className={
                 pathname === link.href
-                  ? 'text-brand-accent-300 underline underline-offset-4'
-                  : 'hover:text-brand-accent-300 focus:text-brand-accent-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent-300 focus-visible:ring-offset-2 rounded'
+                  ? 'text-brand-secondary-400 underline underline-offset-4'
+                  : 'text-brand-secondary-500 hover:text-brand-secondary-400 focus:text-brand-secondary-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent-300 focus-visible:ring-offset-2 rounded'
               }
               aria-current={pathname === link.href ? 'page' : undefined}
             >
@@ -52,18 +52,18 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
-      <div id="menu-mobile" className={`md:hidden ${isOpen ? 'block' : 'hidden'} absolute top-full right-0 left-0 bg-brand-primary-900/95 backdrop-blur-sm border-t border-brand-primary-800`}
+      <div id="menu-mobile" className={`md:hidden ${isOpen ? 'block' : 'hidden'} fixed inset-0 z-[60] bg-brand-primary-900/95 backdrop-blur-sm border-t border-brand-primary-800`}
         onClick={() => setIsOpen(false)}
       >
-        <ul className="flex flex-col px-4 py-3 space-y-3">
+        <ul className="flex flex-col px-4 py-5 space-y-4">
           {links.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
                 className={
                   pathname === link.href
-                    ? 'block py-2 text-brand-accent-300 underline underline-offset-4'
-                    : 'block py-2 hover:text-brand-accent-300 focus:text-brand-accent-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent-300 rounded'
+                    ? 'block py-2 text-brand-secondary-400 underline underline-offset-4'
+                    : 'block py-2 text-brand-secondary-500 hover:text-brand-secondary-400 focus:text-brand-secondary-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent-300 rounded'
                 }
                 aria-current={pathname === link.href ? 'page' : undefined}
               >
