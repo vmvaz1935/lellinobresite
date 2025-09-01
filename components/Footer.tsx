@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaInstagram, FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
@@ -31,9 +32,10 @@ export default function Footer() {
         </div>
       </div>
       <div className="bg-brand-primary-900">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-3">
-          <div className="text-sm text-text-on-primary text-center md:text-left">
-            © {new Date().getFullYear()} Lelli Nobre Advogados. Todos os direitos reservados.
+        <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <Image src="/images/brand/logo-lelli-nobre.webp" alt="Logo Lelli Nobre" width={28} height={28} sizes="28px" />
+            <span className="text-sm text-text-on-primary text-center md:text-left">© {new Date().getFullYear()} Lelli Nobre Advogados. Todos os direitos reservados.</span>
           </div>
           <div className="flex items-center gap-5">
             <span className="text-text-on-primary/80 text-sm hidden md:inline">Nossas redes</span>
