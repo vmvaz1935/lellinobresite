@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   },
   description:
     'Advocacia empresarial em São Paulo: consultivo e contencioso em contratos, M&A, societário, imobiliário e planejamento sucessório.',
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.lellinobre.com.br'),
   openGraph: {
     type: 'website',
     locale: 'pt_BR',

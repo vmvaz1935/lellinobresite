@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { FaInstagram, FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -29,8 +30,42 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="bg-brand-primary-900 text-center text-sm py-4">
-        © {new Date().getFullYear()} Lelli Nobre Advogados. Todos os direitos reservados.
+      <div className="bg-brand-primary-900">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-3">
+          <div className="text-sm text-text-on-primary text-center md:text-left">
+            © {new Date().getFullYear()} Lelli Nobre Advogados. Todos os direitos reservados.
+          </div>
+          <div className="flex items-center gap-5">
+            <span className="text-text-on-primary/80 text-sm hidden md:inline">Nossas redes</span>
+            <a
+              href="https://www.instagram.com/lelli.advogados?igsh=ZHcxdGZ5dDdreWJt&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram Lelli Nobre Advogados"
+              className="text-brand-secondary-500 hover:text-brand-secondary-400 transition-colors"
+            >
+              <FaInstagram aria-hidden size={22} />
+            </a>
+            <a
+              href="https://m.facebook.com/61564523104951/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook Lelli Nobre Advogados"
+              className="text-brand-secondary-500 hover:text-brand-secondary-400 transition-colors"
+            >
+              <FaFacebookSquare aria-hidden size={22} />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/lelli-advogados/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Lelli Nobre Advogados"
+              className="text-brand-secondary-500 hover:text-brand-secondary-400 transition-colors"
+            >
+              <FaLinkedin aria-hidden size={22} />
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );
