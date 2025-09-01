@@ -1,5 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
-# Atualizado para usar a URL de ambiente em produção (next-sitemap também gera este arquivo)
+# Host
+Host: https://www.lellinobre.com.br
+
+# Sitemaps
 Sitemap: https://www.lellinobre.com.br/sitemap.xml

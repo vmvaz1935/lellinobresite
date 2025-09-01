@@ -1,6 +1,7 @@
 import Hero from '../components/Hero';
 import AreaCard from '../components/AreaCard';
 import Link from 'next/link';
+import { FaInstagram, FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
 
 export const metadata = {
   title: 'Home',
@@ -75,6 +76,42 @@ export default function HomePage() {
           <Link href="/quem-somos" className="btn btn-primary">
             Conheça a equipe
           </Link>
+        </div>
+      </section>
+      <section className="py-16">
+        <div className="max-w-4xl mx-auto text-center px-4 space-y-6">
+          <h2 className="text-2xl md:text-3xl font-medium text-brand-primary-700">
+            Nossas redes
+          </h2>
+          <div className="flex items-center justify-center gap-10">
+            <a
+              href="https://www.instagram.com/lelli.advogados?igsh=ZHcxdGZ5dDdreWJt&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram Lelli Nobre Advogados"
+              className="text-brand-secondary-500 hover:text-brand-secondary-400 transition-colors"
+            >
+              <FaInstagram aria-hidden size={40} />
+            </a>
+            <a
+              href="https://m.facebook.com/61564523104951/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook Lelli Nobre Advogados"
+              className="text-brand-secondary-500 hover:text-brand-secondary-400 transition-colors"
+            >
+              <FaFacebookSquare aria-hidden size={40} />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/lelli-advogados/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Lelli Nobre Advogados"
+              className="text-brand-secondary-500 hover:text-brand-secondary-400 transition-colors"
+            >
+              <FaLinkedin aria-hidden size={40} />
+            </a>
+          </div>
         </div>
       </section>
     </>
