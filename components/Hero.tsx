@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { getOfficeImagePath } from '../lib/images';
 import Reveal from './Reveal';
 
 interface HeroProps {
@@ -12,7 +11,7 @@ export default function Hero({ title, subtitle }: HeroProps) {
   return (
     <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-text-on-primary">
       <Image
-        src={getOfficeImagePath()}
+        src="/images/brand/logo-lelli-nobre.webp"
         alt="Logo Lelli Nobre Advogados"
         fill
         className="object-contain bg-bg-inverse"
