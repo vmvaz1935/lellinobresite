@@ -13,13 +13,13 @@ export default function Hero({ title, subtitle }: HeroProps) {
     <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-text-on-primary">
       <Image
         src={getOfficeImagePath()}
-        alt="Escritório Lelli Nobre Advogados em Higienópolis, São Paulo"
+        alt="Logo Lelli Nobre Advogados"
         fill
-        className="object-cover"
+        className="object-contain bg-bg-inverse"
         priority
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/40 to-transparent" aria-hidden="true" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent" aria-hidden="true" />
       <Reveal>
         <div className="relative z-10 max-w-3xl px-4">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 text-text-on-primary">{title}</h1>
