@@ -1,9 +1,11 @@
 import '../styles/globals.css';
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SkipToContent from '../components/SkipToContent';
 import WhatsAppFloat from '../components/WhatsAppFloat';
+import Analytics from '../components/Analytics';
 import { legalServiceLd, organizationLd, personChristineLd, personMateusLd } from '../lib/schema';
 
 export const metadata: Metadata = {
@@ -33,6 +35,24 @@ export const metadata: Metadata = {
     shortcut: '/images/brand/logo-lelli-nobre.png',
     apple: '/images/brand/logo-lelli-nobre.png',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Lelli Nobre Advogados — Estruturando o seu amanhã',
+    description:
+      'Advocacia empresarial em São Paulo: consultivo e contencioso em contratos, M&A, societário, imobiliário e planejamento sucessório.',
+    images: ['/open-graph-image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -40,6 +60,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pt-BR">
       <head>
         <meta charSet="utf-8" />
+        {/* Google Tag (gtag.js) */}
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
+        )}
+        {(process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || process.env.NEXT_PUBLIC_GOOGLE_ADS_ID) && (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);} 
+                gtag('js', new Date());
+                ${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ? `gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}', { send_page_view: false });` : ''}
+                ${process.env.NEXT_PUBLIC_GOOGLE_ADS_ID ? `gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}');` : ''}
+              `,
+            }}
+          />
+        )}
+        {/* Google Ads (conversion linker via gtag config above) */}
         {/* JSON‑LD para serviço jurídico, organização e pessoas */}
         <script
           type="application/ld+json"
@@ -66,6 +104,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
         <Footer />
         <WhatsAppFloat />
+        <Suspense fallback={null}>
+          <Analytics />
+        </Suspense>
       </body>
     </html>
   );

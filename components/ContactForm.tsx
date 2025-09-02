@@ -39,6 +39,12 @@ export default function ContactForm() {
       if (res.ok) {
         setStatus('success');
         (e.currentTarget as HTMLFormElement).reset();
+        // Google Ads Conversion (if configured)
+        if (typeof window !== 'undefined' && window.gtag && process.env.NEXT_PUBLIC_GOOGLE_ADS_ID && process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL) {
+          window.gtag('event', 'conversion', {
+            send_to: `${process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}/${process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL}`,
+          });
+        }
       } else {
         setStatus('error');
       }
